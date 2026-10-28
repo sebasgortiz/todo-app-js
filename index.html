@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>TODO APP</h1>
+    <div class="input-container">
+        <input type="text" placeholder="Escribe aqui">
+        <button class="add-btn">+</button>
+        <p class="error-message">Este campo no puede estar vacio</p>
+    </div>
+
+    <div class="tasks-container">
+    <div class="task-item">
+        <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon></button>
+        <p class="task-text">Bienvenido a TODO APP!</p>
+        <div class="task-actions">
+            <button class="edit-btn"><ion-icon name="create-outline"></ion-icon></button>
+            <button class="check-btn"><ion-icon name="checkmark-outline"></ion-icon></button>
+        </div>
+    </div>
+
+    <div class="task-item completed">
+        <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon></button>
+        <p class="task-text">Esto es una lista de tareas</p>
+        <div class="task-actions">
+            <button class="edit-btn"><ion-icon name="create-outline"></ion-icon></button>
+            <button class="check-btn"><ion-icon name="checkmark-outline"></ion-icon></button>
+        </div>
+    </div>
+
+    <div class="task-item">
+        <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon></button>
+        <p class="task-text">Esta es una tarea con un texto bastante largo para verificar que el texto no se rompa ni se salga de la pantalla</p>
+        <div class="task-actions">
+            <button class="edit-btn"><ion-icon name="create-outline"></ion-icon></button>
+            <button class="check-btn"><ion-icon name="checkmark-outline"></ion-icon></button>
+        </div>
+    </div>
+</div>
+
+<div class="counters-container">
+        <div class="counter total">
+            <span>Total: 3</span>
+        </div>
+        <div class="counter completed">
+            <span>Completed: 1</span>
+        </div>
+        <div class="counter incompleted">
+            <span>Incompleted: 2</span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
